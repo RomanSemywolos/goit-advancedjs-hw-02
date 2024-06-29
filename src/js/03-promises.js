@@ -10,7 +10,6 @@ function onSubmit(event) {
   const delay = Number(formData.get('delay'));
   const step = Number(formData.get('step'));
   const amount = Number(formData.get('amount'));
-  form.reset();
 
   for (let i = 0; i < amount; i++) {
     createPromise(i + 1, delay + i * step);
