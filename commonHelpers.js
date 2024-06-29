@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-3cfb730f.js";/* empty css                      */const e=document.querySelector("[data-start]"),t=document.querySelector("[data-stop]");let a=null;t.disabled=!0;function d(){document.body.style.backgroundColor=`#${Math.floor(Math.random()*16777215).toString(16).padStart(6,0)}`}e.addEventListener("click",()=>{e.disabled=!0,t.disabled=!1,a=setInterval(()=>{d()},1e3)});t.addEventListener("click",()=>{e.disabled=!1,t.disabled=!0,clearInterval(a)});
+//# sourceMappingURL=commonHelpers.js.map
